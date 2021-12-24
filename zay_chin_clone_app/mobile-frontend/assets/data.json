@@ -1,0 +1,29 @@
+{
+    "data": [
+        {
+            "mainCategory": "Meat & Seafood",
+            "subCategory": [
+                "Frog",
+                "Chicken",
+                "Fish",
+                "Seafood",
+                "Mutton",
+                "Port",
+                "Beef",
+                "Duck",
+                "Bacon, Ham, Sausages & Meatball",
+                "Frozen Foods"
+            ]
+        },
+        {
+            "mainCategory": "Fruits & Vegetables",
+            "subCategory": [
+                "Bean, Corn & More",
+                "Broccoli, Cauliflower & Cabbage",
+                "Buds & Shoots",
+                "Chilli, Lemon, Carlic & Ginger",
+                "Fruits"
+            ]
+        }
+    ]
+}

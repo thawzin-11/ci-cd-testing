@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Zay Wal',
+      title: 'Zay Wal App',
       theme: ThemeData(
         primaryColor: Color(0xFFEAEDEF),
         // scaffoldBackgroundColor: Color(0xFFEFEFD0))

@@ -54,8 +54,8 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
     - name: Change admin panel dir
-      working-directory: ./admin_panel
-      run: pwd
+      # working-directory: ./admin_panel
+      run: cd admin_panel
 
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1

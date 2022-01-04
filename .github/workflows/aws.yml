@@ -36,7 +36,7 @@ env:
   ECR_REPOSITORY: zaywal-admin-panel           # set this to your Amazon ECR repository name
   ECS_SERVICE: admin-panel-service                 # set this to your Amazon ECS service name
   ECS_CLUSTER: zaywal-cluster2                 # set this to your Amazon ECS cluster name
-  ECS_TASK_DEFINITION: ./admin_panel/task-definition.json # set this to the path to your Amazon ECS task definition
+  ECS_TASK_DEFINITION: ./zay_chin_clone_app/admin_panel/task-definition.json # set this to the path to your Amazon ECS task definition
                                                # file, e.g. .aws/task-definition.json
   CONTAINER_NAME: admin-panel-container           # set this to the name of the container in the
                                                # containerDefinitions section of your task definition

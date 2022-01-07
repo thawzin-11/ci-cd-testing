@@ -37,7 +37,7 @@ class MyApp extends StatelessWidget {
       ),
       // home: const HomePage(),
       home: const Center(
-        child: Text('Hello Admin'),
+        child: Text('Zay-Wal Admin Panel'),
       ),
     );
   }

@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon src/index",
+    "dev": "nodemon src/index",
+    "start": "node src/index",
     "seeddb": "node src/data-preparation/seedDb"
   },
   "author": "",

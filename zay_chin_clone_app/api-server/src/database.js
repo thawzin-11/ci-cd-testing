@@ -7,8 +7,8 @@ dotenv.config();
 
 const getClientConnection = async () => {
   const client = new MongoClient(
-    // `mongodb://${process.env.DB_USER}:${process.env.DB_PASS}@${process.env.DB_HOST}:${process.env.DB_PORT}`
-    url
+    `mongodb://${process.env.DB_USER}:${process.env.DB_PASS}@${process.env.DB_HOST}:${process.env.DB_PORT}`
+    // url
   );
   await client.connect();
 

@@ -1,10 +1,13 @@
 import 'package:admin_panel/home_page.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:graphql_flutter/graphql_flutter.dart';
 
-void main() {
+void main() async {
+  await dotenv.load(fileName: ".env");
+
   final HttpLink httpLink = HttpLink(
-    'http://localhost:4000/graphql',
+    dotenv.env['GRAPHQL_URL'] ?? 'http://localhost:4000/graphql'
   );
 
   ValueNotifier<GraphQLClient> graphQLClient = ValueNotifier(
@@ -35,10 +38,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      // home: const HomePage(),
-      home: const Center(
-        child: Text('Zay-Wal Admin Panel'),
-      ),
+      home: const HomePage(),
+      // home: const Center(
+      //   child: Text('Zay-Wal Admin Panel Test'),
+      // ),
     );
   }
 }

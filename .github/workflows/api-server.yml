@@ -28,8 +28,10 @@ name: Deploy Api Server to Amazon ECS
 
 on:
   push:
-    branches:
-      - main
+    tags:
+      - "**"
+    # branches:
+    #   - main
 
 env:
   AWS_REGION: ap-southeast-1                   

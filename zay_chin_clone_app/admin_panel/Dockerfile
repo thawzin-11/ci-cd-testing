@@ -18,13 +18,13 @@ RUN flutter doctor -v
 # Enable flutter web
 RUN flutter channel stable
 RUN flutter upgrade
-RUN flutter pub upgrade
 RUN flutter config --enable-web
 
 # Copy files to container and build
 RUN mkdir /app/
 COPY . /app/
 WORKDIR /app/
+RUN flutter pub upgrade
 RUN flutter build web
 
 # Stage 2 - Create the run-time image

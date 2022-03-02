@@ -20,6 +20,7 @@ jobs:
       - run:  |
           cd zay_chin_clone_app/mobile-frontend
           flutter pub get
+          flutter pub upgrade
           flutter build apk
       - uses: actions/upload-artifact@v2
         with:

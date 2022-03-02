@@ -17,12 +17,12 @@ jobs:
       - uses: subosito/flutter-action@v1
         with:
           channel: 'stable'
-      - run:  cd zay_chin_clone_app/mobile-frontend
-      - run:  flutter pub get
-      - run:  flutter build apk
+      - run:  |
+          cd zay_chin_clone_app/mobile-frontend
+          flutter pub get
+          flutter build apk
       - uses: actions/upload-artifact@v2
         with:
           name: release-apk
           path: build/app/outputs/apk/release/app-release.apk
-
 

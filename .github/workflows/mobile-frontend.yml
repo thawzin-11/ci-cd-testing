@@ -12,10 +12,12 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-java@v2
         with:
-          java-version: '12.x'
+          distribution: 'adopt'
+          java-version: '8'
       - uses: subosito/flutter-action@v1
         with:
           channel: 'stable'
+      - run:  cd zay_chin_clone_app/mobile-frontend
       - run:  flutter pub get
       - run:  flutter build apk
       - uses: actions/upload-artifact@v2
